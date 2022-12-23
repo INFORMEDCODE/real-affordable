@@ -1,0 +1,29 @@
+---
+import StateSelect from "./components/StateSelect";
+import Label from "./components/Label";
+import TextEntry from "./components/TextEntry";
+---
+
+<html lang="en">
+	<head>
+	<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Real Affordable</title>
+	</head>
+	<body>
+		<h1>What can I really Afford</h1>
+		<p>A real calculator on what you can borrow</p>
+		<div class="flex border border-solid mx-auto justify-center p-2">
+			<div class="flex justify-center align-center items-center">
+				<Label>Purchase Price:</Label>
+				<TextEntry />
+			</div>
+			<div class="flex justify-center align-center items-center">
+				<Label>State:</Label>
+				<StateSelect />
+			</div>
+		</div>
+	</body>
+</html>
